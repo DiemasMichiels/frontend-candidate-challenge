@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import { TodoList } from "./components/TodoList";
-
 import "./styles.scss";
 
 export default function App() {

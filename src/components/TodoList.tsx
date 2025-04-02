@@ -1,8 +1,7 @@
-import React from "react";
-
 type TodoListProps = {
-  todos: any[];
+  todos: { text: string; done: boolean }[];
 };
+
 export const TodoList = ({ todos }: TodoListProps) => {
   return (
     <ul className="todoList">
