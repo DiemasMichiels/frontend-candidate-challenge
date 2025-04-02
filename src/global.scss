@@ -1,0 +1,17 @@
+:root {
+  --color-background: #e7eaec;
+  --color-primary: #00a8f0;
+  --color-primary-hover: #0096d6;
+  --color-danger: #f44336;
+  --color-danger-hover: #d32f2f;
+  --color-text: #333;
+  --color-text-secondary: #888;
+  --color-border: #d9d9d9;
+  --color-item-background: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  padding: 25px;
+  background-color: var(--color-background);
+  font-family: sans-serif;
+}

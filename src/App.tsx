@@ -1,17 +1,14 @@
-import { useState } from "react";
-import { TodoList } from "./components/TodoList";
-import "./styles.scss";
+import { TodoInput } from "./components/TodoInput/TodoInput";
+import { TodoList } from "./components/TodoList/TodoList";
+import styles from "./App.module.scss";
 
 export default function App() {
-  const [todos] = useState([
-    { text: "Buy milk", done: true },
-    { text: "Buy bread", done: false },
-  ]);
-
   return (
-    <div className="todoListApp">
-      <div className="forsta-logo" />
-      <TodoList todos={todos} />
+    <div className={styles.app}>
+      <div className={styles.logo} />
+      <h1>Todo List</h1>
+      <TodoInput />
+      <TodoList />
     </div>
   );
 }

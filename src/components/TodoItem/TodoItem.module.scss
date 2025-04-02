@@ -1,0 +1,53 @@
+.item {
+  color: var(--color-text);
+  background-color: var(--color-item-background);
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.text {
+  flex-grow: 1;
+  border: 0;
+  padding: 16px 8px;
+
+  &:not(.done) {
+    cursor: text;
+
+    &:hover {
+      outline: auto 1px var(--color-text);
+    }
+  }
+
+  &.done {
+    text-decoration: line-through;
+    color: var(--color-text-secondary);
+    cursor: default;
+  }
+}
+
+.deleteButton {
+  padding: 0 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-danger);
+
+  &:hover {
+    background-color: var(--color-danger-hover);
+  }
+
+  &:disabled {
+    background-color: var(--color-text-secondary);
+    cursor: not-allowed;
+  }
+}
